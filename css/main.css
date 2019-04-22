@@ -1,0 +1,360 @@
+body, html {
+  width: 100%;
+  height: 100%;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1em;
+  text-transform: uppercase;
+}
+
+.wrapper {
+  width: auto;
+  margin: 1 auto;
+  height: 100vh;
+}
+
+.startButton {
+  display: block;
+  color: black;
+  font-size: 1em;
+  font-weight: 700;
+  width: 15em;
+  margin: 2em auto;
+  padding: 0.5em 0em 0.5em 0em;
+  background-color: white;
+  border-radius: 5em;
+  border-width: 0.25em;
+  border-color: white;
+  text-transform: uppercase;
+}
+
+.startButton:hover {
+  cursor: pointer;
+  background-color: #3FA9F5;
+  transition:.10s ease-in;
+}
+
+.nextButton {
+  color: black;
+  display: none;
+  font-size: 1em;
+  font-weight: 700;
+  width: 15em;
+  margin: 2.5% auto; 
+  padding: 0.5em 0em 0.5em 0em;
+  background-color: white;
+  border-radius: 5em;
+  border-width: 0.25em;
+  border-color: white;
+  text-transform: uppercase; 
+}
+
+.nextButton:hover {
+  cursor: pointer;
+  background-color: #3FA9F5;
+  transition:.10s ease-in;
+}
+
+.scenarioTitle {
+display: none;
+margin: 0% 0 0 0;
+font-size: 1.5em;
+font-weight: 700;
+border-top: 0.05em solid white;
+border-bottom: 0.05em solid white;
+padding: 0.75em;
+}
+
+.scenarioBody{
+  text-transform: none;
+  display: none;
+  margin: 2.5% 0 0 0;
+  font-size: 1em;
+  font-weight: 500;
+}
+
+.wsLogoS {
+  max-width: 7.5em;
+  height: auto;
+  margin: 5% 0 2.5% 0;
+}
+
+.wsLogoL {
+  max-width: 15em;
+  height: auto;
+  margin: 10% 0 0 0;
+}
+
+.wsMotion {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: -100;
+}
+
+#quiz {
+  background-color: rgba(0, 0, 0, 0);
+  padding-bottom: 60px;
+  color: white;
+  text-align: center;
+  margin: ;
+}
+
+#quiz > h1 {
+  text-align: center;
+  padding: 0em 0em 1em 0em;
+  font-size: 20px;
+  color: white;
+}
+
+.questions {
+  font-size: 1.5em;
+  font-weight: 700;
+  border-top: 0.05em solid white;
+  border-bottom: 0.05em solid white;
+  padding: 0.75em;
+}
+
+.answers div:hover {
+  cursor: pointer;
+  background-color: #3FA9F5;
+  transition:.10s ease-in;
+}
+
+.answers {
+  color: black;
+}
+
+.answers div {
+  font-size: 1em;
+  font-weight: 700;
+  width: 15em;
+  margin: 1em auto;
+  padding: 0.5em 0em 0.5em 0em;
+  background-color: white;
+  border-radius: 5em;
+  border-width: 0.25em;
+  border-color: white;
+}
+
+.checker {
+  display: inline-block;
+  width: 20%;
+  margin: 0 auto;
+}
+
+.correct, .false {
+  font-weight: 700;
+  background-color: #3FA9F5;
+  width: 2em;
+  height: 2em;
+  line-height: 2em;
+  padding-left: 0em;
+  float: left;
+  margin-left: 0.5em;
+  margin-top: 0.00em;
+  border-radius: 2em;
+}
+
+.false {
+  background-color: #DC4437;
+}
+
+.questions, .answers, .checkAnswers, .checker, .wsLogoS {
+  display: none;
+}
+
+.sequence video {
+  /* height: 100%; */
+}
+
+.icons {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr; 
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  bottom: 0;
+}
+.icons img {
+  max-width: 50%;
+}
+.retry img{
+  display: inline;
+  position: fixed;
+  z-index: 1;
+}
+@media screen and (min-width: 320px) {
+  .icons {
+    display: grid;
+    grid-template-columns: 1fr;
+    /* grid-template-rows: 1fr 1fr 1fr 1fr;  */
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    bottom: 0;
+  }
+
+  .sequence {
+    display: grid;
+    grid-template-columns: 1fr;
+    /* grid-template-rows: 1fr 1fr 1fr 1fr;  */
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    bottom: 0;
+  }
+  @media screen and (min-width: 550px) {
+  .icons {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    /* grid-template-rows: 1fr 1fr 1fr 1fr;  */
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    bottom: 0;
+  }
+  
+  .sequence {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    /* grid-template-rows: 1fr 1fr 1fr 1fr;  */
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    bottom: 0;
+  }
+  @media screen and (min-width: 720px) {
+
+  .icons {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    /* grid-template-rows: 1fr 1fr 1fr 1fr;  */
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    bottom: 0;
+    z-index: 1;
+
+  }
+
+  .sequence {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    /* grid-template-rows: 1fr 1fr 1fr 1fr;  */
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    bottom: 0;
+  }
+
+
+.icons img {
+  width: 10em;
+  margin: 3em;
+  position: absolute;
+}
+
+/* .drink:hover {
+  transition: .5s ease;
+  position: absolute;
+  display: block;
+  max-width: 8em;
+  cursor: pointer;
+  background-image: url(../img/drinkH.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  max-width: 10em;
+  z-index: 2;
+} */
+
+
+.icons .wash {
+  /* grid-column-start: 1; */
+  /* grid-row: 1; */
+  /* background-image: url(../img/drink.png); */
+  /* background-size: contain; */
+  /* background-repeat: no-repeat; */
+  /* background-position: center; */
+  /* grid-column-start: 1; */
+  /* grid-row: 1; */
+  /* left: 1em; */
+  /* z-index: 1; */
+}
+
+/* .sequence {
+  display: grid;
+  grid-template-columns: 33.3333% 33.3333% 33.3333%;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  bottom: 0;
+} */
+
+.sequence > div {
+  position: relative;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.sequence > div:hover .overlap {
+  opacity: 100;
+}
+
+.firstVideo {
+  background-image: url(../img/drink.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  grid-column-start: 1;
+  grid-row: 1;
+  left: 1em;
+  /* position: absolute; */
+ /* border-style: solid;
+  border-width: 1em 0 1em 2em;*/
+  /*border-color: transparent transparent transparent #000;*/
+  /* opacity: 1; */
+  /* cursor: pointer; */
+  z-index: 1;
+}
+
+.overlap {
+  position: absolute;
+  place-content: center;
+  display: grid;
+  width: 90%;
+  height: 45%;
+  top: 5%;
+  left: 5%;
+  background-color: rgba(0, 0, 0, 0.75);
+  text-align: center;
+  color: white;
+  opacity: 0;
+  transition: opacity 0.25s;
+  text-transform: none;
+  border: 0em;
+  border-radius: 2.5em;
+}
+
+
+@media screen and (min-aspect-ratio: 16/9) {
+  article {
+    padding: 1rem 5vw;
+  }
+  .sequence video {
+    width: 100%;
+    height: auto;
+  }
+}
