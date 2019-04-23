@@ -55,7 +55,6 @@
       <!-- <div class="fifthVideo" onclick="playPauseMedia5()"><div class="overlap"><p>LIVESTOCK<br><br>Choosing this resource will grant you the<br> ability to farm livestock.</p></div><video onclick=""><source src="img/livestock.mp4" type="video/mp4" onclick=""></video></div>  -->
       <!-- <div class="sixthVideo" onclick="playPauseMedia6()"><div class="overlap"><p>TOILET<br><br>Choosing this resource will grant you<br> access to the plumbing system</p></div><video onclick=""><source src="img/toilet.mp4" type="video/mp4" onclick=""></video></div>  -->
     
-
   <!-- Toggle video icons (working) Kyle -->
     <div class="icons" id="icons">
       <div><img src="img/drink.png" alt="" class="drink" id="drink" onmouseover="this.src='img/drinkH.png'" onmouseout="this.src='img/drink.png'" onclick="playPauseMedia1()"></div>
@@ -66,10 +65,13 @@
       <div><img src="img/flush.png" alt="" class="flush" id="" onmouseover="this.src='img/flushH.png'" onmouseout="this.src='img/flush.png'" onclick="playPauseMedia6()"></div>
     </div>
     
-    <!-- </div class="retry" id="retry" onhover="" onclick="">    
-      <div><img src="img/retry.png" alt=""></div>
-    </div> -->
-
+  <!-- Displays score & Retry icon (work in progress) Kyle -->
+    <div class="playHUD" id="playHUD">
+      <h2 id="scoreBoard"></h2>
+      <div class="retry"><img src="img/retry.png" onclick="window.location.reload()" onmouseover="this.src='img/retryH.png'" onmouseout="this.src='img/retry.png'" alt=""></div>
+    </div>  
+  
+    
   <!-- Javascript that determines the max number of clicks based on score (working) Kyle -->
     <script>
 
@@ -83,6 +85,7 @@
         
         
         var count=0;
+        var totalCreditRemaining=0;
         
         //plays first video if the user has enough credits
         
@@ -94,6 +97,7 @@
               video1[0].play();
               // alert("video has been played");
               count++; 
+              drawScoreBoard();
             } else {
               // videos.pause;
               // alert("video won't play");
@@ -111,6 +115,7 @@
               video2[0].play();
               // alert("video has been played");
               count++; 
+              drawScoreBoard();
             } else {
               // videos.pause;
               // alert("video won't play");
@@ -129,6 +134,7 @@
             video3[0].play();
             // alert("video has been played");
             count++; 
+            drawScoreBoard();
           } else {
             // videos.pause;
             // alert("video won't play");
@@ -148,6 +154,7 @@
             video4[0].play();
             // alert("video has been played");
             count++; 
+            drawScoreBoard();
           } else {
             // videos.pause;
             // alert("video won't play");
@@ -165,7 +172,8 @@
             // alert(video1[0]);
             video5[0].play();
             // alert("video has been played");
-            count++; 
+            count++;
+            drawScoreBoard(); 
           } else {
             // videos.pause;
             // alert("video won't play");
@@ -184,6 +192,7 @@
             video6[0].play();
             // alert("video has been played");
             count++; 
+            drawScoreBoard();
           } else {
             // videos.pause;
             // alert("video won't play");
@@ -191,6 +200,15 @@
         
         
         }
+        
+        function drawScoreBoard(){
+          totalCreditRemaining = score - count;
+          // scoreBoard.innerHTML = "***Total Score: "+ score + " Water units availible: " + totalCreditRemaining + "***";
+          scoreBoard.innerHTML = " Water credits left: " + totalCreditRemaining + "   ";
+   
+        }
+        
+          
         
     </script>
     

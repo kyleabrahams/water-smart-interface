@@ -3,7 +3,7 @@
 
 function startButton(){ 
   document.getElementById("startButton").style.display = 'none';
-  document.getElementById("wsLogoS").style.display = 'inline-block';
+  document.getElementById("wsLogoS").style.display = 'inline-grid';
   document.getElementById("wsLogoL").style.display = 'none';
   document.getElementById("nextButton").style.display = 'block';
   document.getElementById("scenarioTitle").style.display = 'block';
@@ -91,7 +91,7 @@ window.onload = function () {
 
   document.getElementById("sequence").style.display = 'none';
   document.getElementById("icons").style.display = 'none';
-  // document.getElementById("retry").style.display = 'none';
+  document.getElementById("playHUD").style.display = 'none';
 
   var questionArea = document.getElementsByClassName('questions')[0],
         answerArea = document.getElementsByClassName('answers')[0],
@@ -196,8 +196,9 @@ window.onload = function () {
           // wrapperArea.innerHTML = '';
           document.getElementById("sequence").style.display = 'grid';
           document.getElementById("icons").style.display = 'grid';
-
+          document.getElementById("playHUD").style.display = 'grid';
           // document.getElementById("wrapper").style.display = 'none';
+          scoreBoard.innerHTML = "Water credits won: " + score;
         }
                                 
       };
