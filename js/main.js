@@ -159,6 +159,8 @@ window.onload = function () {
       return function () {
         var givenAnswer = i,
             correctAnswer = arr[arr.length-1];
+            vid = document.getElementById("wsMotion");
+
 
       // below triggers screen to disappear instead of say 'Done'     
             //  wrapperArea  = document.getElementsByClassName('wrapper')[0];
@@ -197,10 +199,12 @@ window.onload = function () {
           document.getElementById("sequence").style.display = 'grid';
           document.getElementById("icons").style.display = 'grid';
           document.getElementById("playHUD").style.display = 'grid';
+          document.getElementById("wsMotion").style.display = 'muted';
+          // vid.muted = true;                    
+          vid.volume = 0.3;
           // document.getElementById("wrapper").style.display = 'none';
           scoreBoard.innerHTML = "Water credits won: " + score;
         }
-                                
       };
     }
     
