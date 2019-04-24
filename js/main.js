@@ -159,7 +159,7 @@ window.onload = function () {
       return function () {
         var givenAnswer = i,
             correctAnswer = arr[arr.length-1];
-            vid = document.getElementById("wsMotion");
+            vid = document.getElementById("water");
 
 
       // below triggers screen to disappear instead of say 'Done'     

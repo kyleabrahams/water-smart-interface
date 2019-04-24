@@ -11,20 +11,26 @@
   </head>
   
   <body>
+    
 
   <!-- Quiz section (working) Jack -->
     <div class="wrapper">
-        <video autoplay="autoplay" loop="loop" class="wsMotion" id=wsMotion><source src="vid/wsMotionS.mp4" type="video/mp4"></video>
-        <div id="quiz">
+          <video autoplay="autoplay" loop="loop" muted class="wsMotion" id=wsMotion><source src="vid/wsMotionS.mp4" type="video/mp4"></video>
+          <audio id="water" autoplay loop>
+            <source src="vid/water.mp3">
+          </audio>       
+          
+          <div id="quiz">
           <img src="img/wsLogo.png" alt="" class="wsLogoS" id="wsLogoS">
           <img src="img/wsLogo.png" alt="" class="wsLogoL" id="wsLogoL">
           <div class="startButton" id="startButton" onclick="startButton()">Start</div>
           <div class="scenarioScreen">
             <p class="scenarioTitle" id="scenarioTitle">Scenario</p>
             <p class="scenarioBody" id="scenarioBody">
-              Due to a recent drought, your off-grid house has a limited amount of water in its reserves.
-              <br><br>For each question you answer correctly, you will gain a point. 
-              <br><br>You will use the points you collect to decide which systems to distribute your water to, deciding your fate.
+              Due to a damaged water supply line, your off-grid house has a limited amount of water in its reserves.
+              <br><br>For each question you answer correctly, you will win a water credit. 
+              <br><br>For each water credit you win, you must decide which system to distribute your water credit to deciding your fate. 
+              <br><br>Good luck!!!
             </p>
             <div class="nextButton" id="nextButton" onclick="nextButton()">Next</div>
           </div>
