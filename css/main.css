@@ -1,7 +1,7 @@
 body, html {
   width: 100%;
   height: 100%;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Rubik', sans-serif;
   font-size: 1em;
   /* text-transform: uppercase; */
   overflow: hidden;
@@ -19,7 +19,7 @@ body, html {
   margin: 2em auto;
   padding: 0.5em 0em 0.5em 0em;
   background-color: white;
-  border-radius: 5em;
+  border-radius: 5px;
   border-width: 0.25em;
   border-color: white;
   /* text-transform: uppercase; */
@@ -40,7 +40,7 @@ body, html {
   margin: 2.5% auto; 
   padding: 0.5em 0em 0.5em 0em;
   background-color: white;
-  border-radius: 5em;
+  border-radius: 5px;
   border-width: 0.25em;
   border-color: white;
   /* text-transform: uppercase;  */
@@ -60,6 +60,8 @@ font-weight: 700;
 border-top: 0.05em solid white;
 border-bottom: 0.05em solid white;
 padding: 0.75em;
+color: #3FA9F5;
+
 }
 
 .scenarioBody{
@@ -71,7 +73,7 @@ padding: 0.75em;
 }
 
 .wsLogoS {
-  max-width: 7.5em;
+  max-width: 200px;
   height: auto;
   margin: 5% 0 2.5% 0;
 }
@@ -112,6 +114,7 @@ padding: 0.75em;
   border-top: 0.05em solid white;
   border-bottom: 0.05em solid white;
   padding: 0.75em;
+  color: #3FA9F5;
 }
 
 .answers div:hover {
@@ -131,7 +134,7 @@ padding: 0.75em;
   margin: 1em auto;
   padding: 0.5em 0em 0.5em 0em;
   background-color: white;
-  border-radius: 5em;
+  border-radius: 5px;
   border-width: 0.25em;
   border-color: white;
 }
@@ -172,15 +175,16 @@ padding: 0.75em;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr; 
   position: fixed;
-  width: 100%;
-  height: 100%;
+  width: auto;
+  height: auto;
   top: 0;
   bottom: 0;
 }
-.icons img {
-  max-width: 50%;
-  cursor: pointer;
 
+.icons img {
+  max-width: 100px;
+  cursor: pointer;
+  
 }
 
 .playHUD {
@@ -208,7 +212,7 @@ padding: 0.75em;
   margin: 2em auto;
   padding: 0.5em 0em 0.5em 0em;
   background-color: #3FA9F5;
-  border-radius: 5em;
+  border-radius: 5px;
   border-width: 0.25em;
   border-color: white;
   /* grid-template-columns: 1fr 1fr 1fr; */
@@ -359,7 +363,7 @@ padding: 0.75em;
   transition: opacity 0.25s;
   text-transform: none;
   border: 0em;
-  border-radius: 2.5em;
+  border-radius: 5px;
 }
 
 
