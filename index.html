@@ -15,12 +15,12 @@
 
   <!-- Quiz section (working) Jack -->
     <div class="wrapper">
-          <video autoplay="autoplay" loop="loop" muted class="wsMotion" id=wsMotion><source src="vid/wsMotionS.mp4" type="video/mp4"></video>
-          <audio id="water" autoplay loop>
-            <source src="vid/water.mp3">
-          </audio>       
-          
-          <div id="quiz">
+        <video autoplay="autoplay" loop="loop" muted class="wsMotion" id=wsMotion><source src="vid/wsMotionS.mp4" type="video/mp4"></video>
+        <audio id="water" autoplay loop>
+          <source src="vid/water.mp3">
+        </audio>       
+        
+        <div id="quiz">
           <img src="img/wsLogo.png" alt="" class="wsLogoS" id="wsLogoS">
           <img src="img/wsLogo.png" alt="" class="wsLogoL" id="wsLogoL">
           <div class="startButton" id="startButton" onclick="startButton()">Start</div>
@@ -32,28 +32,54 @@
               For each water credit you win, you must decide which system to distribute your water credit to deciding your fate. 
               Good luck!!!
             </p>
-            <div class="nextButton" id="nextButton" onclick="nextButton()">Next</div>
+          <div class="nextButton" id="nextButton" onclick="nextButton()">Next</div>
           </div>
           <p class="questions" id="questions"></p>
           <div class="answers" id="answers"></div>         
-          <div class="checkAnswers" id="checkAnswers">
-            <div class="checker" id="checker">
-            </div>
-          </div>
+          <div class="checkAnswers" id="checkAnswers"></div>
+          <div class="checker" id="checker"></div>
         </div>
-      </div>
+    </div>
     
-  <!-- Video section (working) Kyle  -->
-      <div class="sequence" id="sequence">
-        <div><video class="firstVideo" onclick="playPauseMedia1()"><source src="img/drink.mp4" type="video/mp4" onclick="play(this)"></video></div>
-          <!-- <div><img src="img/drink.png" alt="" class="drink" id="drink" onmouseover="this.src='img/drinkH.png'" onmouseout="this.src='img/drink.png'" onclick="playPauseMedia1()"></div> -->
-          <!-- <div class="button"></div> -->
-        <div><video class="secondVideo" onclick="playPauseMedia2()"><source src="img/clothes.mp4" type="video/mp4" onclick=""></video></div>
-        <div><video class="thirdVideo" onclick="playPauseMedia3()"><source src="img/shower.mp4" type="video/mp4" onclick=""></video></div> 
-        <div><video class="fourthVideo" onclick="playPauseMedia4()"><source src="img/vegetation.mp4" type="video/mp4" onclick=""></video></div>
-        <div><video class="fifthVideo" onclick="playPauseMedia5()"><source src="img/livestock.mp4" type="video/mp4" onclick=""></video></div> 
-        <div><video class="sixthVideo" onclick="playPauseMedia6()"><source src="img/toilet.mp4" type="video/mp4" onclick=""></video></div>
+  
+    <!-- Displays score & Retry icon (work in progress) Kyle -->
+    
+    <div class="playHUD" id="playHUD">
+      <h2 id="scoreBoard"></h2>
+      <div>      
+        <img class="retry" src="img/retry.png" onclick="window.location.reload()" onmouseover="this.src='img/retryH.png'" onmouseout="this.src='img/retry.png'" alt="">
       </div>
+    </div>  
+
+
+  
+    <!-- Video section (working) Kyle  -->
+    <div class="sequence" id="sequence">
+      
+      <div><video class="firstVideo" onclick="playPauseMedia1()"><source src="img/drink.mp4" type="video/mp4" onclick="play(this)"></video>
+        <img src="img/drink.png" alt="" class="drink" id="drink" onmouseover="this.src='img/drinkH.png'" onmouseout="this.src='img/drink.png'" onclick="playPauseMedia1()">         <!-- <div class="button"></div> -->
+      </div>
+
+      <div><video class="secondVideo" onclick="playPauseMedia2()"><source src="img/clothes.mp4" type="video/mp4" onclick=""></video>
+        <img src="img/wash.png" alt="" class="wash" id="" onmouseover="this.src='img/washH.png'" onmouseout="this.src='img/wash.png'" onclick="playPauseMedia2()">
+      </div>
+      
+      <div><video class="thirdVideo" onclick="playPauseMedia3()"><source src="img/shower.mp4" type="video/mp4" onclick=""></video>
+        <img src="img/shower.png" alt="" class="shower" id="" onmouseover="this.src='img/showerH.png'" onmouseout="this.src='img/shower.png'" onclick="playPauseMedia3()">
+      </div> 
+      
+      <div><video class="fourthVideo" onclick="playPauseMedia4()"><source src="img/vegetation.mp4" type="video/mp4" onclick=""></video>
+        <img src="img/water.png" alt="" class="water" id="" onmouseover="this.src='img/waterH.png'" onmouseout="this.src='img/water.png'" onclick="playPauseMedia4()">
+      </div>
+      
+      <div><video class="fifthVideo" onclick="playPauseMedia5()"><source src="img/livestock.mp4" type="video/mp4" onclick=""></video>
+        <img src="img/feed.png" alt="" class="feed" id="" onmouseover="this.src='img/feedH.png'" onmouseout="this.src='img/feed.png'" onclick="playPauseMedia5()">
+      </div> 
+      
+      <div><video class="sixthVideo" onclick="playPauseMedia6()"><source src="img/toilet.mp4" type="video/mp4" onclick=""></video>
+        <img src="img/flush.png" alt="" class="flush" id="" onmouseover="this.src='img/flushH.png'" onmouseout="this.src='img/flush.png'" onclick="playPauseMedia6()">
+      </div>
+   </div>
     
   <!-- Hover info (videos not toggling commented out for now, work in progress..) Jack -->
       <!-- <div class="firstVideo" onclick="playPauseMedia1()"><div class="overlap"><p>DRINKING WATER<br><br>Choosing this resource will grant you<br> access to potable water.</p></div><video onclick=""><source src="img/drink.mp4" type="video/mp4" onclick=""></video></div>  -->
@@ -65,19 +91,15 @@
     
   <!-- Toggle video icons (working) Kyle -->
     <div class="icons" id="icons">
-      <div><img src="img/drink.png" alt="" class="drink" id="drink" onmouseover="this.src='img/drinkH.png'" onmouseout="this.src='img/drink.png'" onclick="playPauseMedia1()"></div>
-      <div><img src="img/wash.png" alt="" class="wash" id="" onmouseover="this.src='img/washH.png'" onmouseout="this.src='img/wash.png'" onclick="playPauseMedia2()"></div>
-      <div><img src="img/shower.png" alt="" class="shower" id="" onmouseover="this.src='img/showerH.png'" onmouseout="this.src='img/shower.png'" onclick="playPauseMedia3()"></div>
-      <div><img src="img/water.png" alt="" class="water" id="" onmouseover="this.src='img/waterH.png'" onmouseout="this.src='img/water.png'" onclick="playPauseMedia4()"></div>
-      <div><img src="img/feed.png" alt="" class="feed" id="" onmouseover="this.src='img/feedH.png'" onmouseout="this.src='img/feed.png'" onclick="playPauseMedia5()"></div>
-      <div><img src="img/flush.png" alt="" class="flush" id="" onmouseover="this.src='img/flushH.png'" onmouseout="this.src='img/flush.png'" onclick="playPauseMedia6()"></div>
+      <!-- <div><img src="img/drink.png" alt="" class="drink" id="drink" onmouseover="this.src='img/drinkH.png'" onmouseout="this.src='img/drink.png'" onclick="playPauseMedia1()"></div> -->
+      <!-- <div><img src="img/wash.png" alt="" class="wash" id="" onmouseover="this.src='img/washH.png'" onmouseout="this.src='img/wash.png'" onclick="playPauseMedia2()"></div> -->
+      <!-- <div><img src="img/shower.png" alt="" class="shower" id="" onmouseover="this.src='img/showerH.png'" onmouseout="this.src='img/shower.png'" onclick="playPauseMedia3()"></div> -->
+      <!-- <div><img src="img/water.png" alt="" class="water" id="" onmouseover="this.src='img/waterH.png'" onmouseout="this.src='img/water.png'" onclick="playPauseMedia4()"></div> -->
+      <!-- <div><img src="img/feed.png" alt="" class="feed" id="" onmouseover="this.src='img/feedH.png'" onmouseout="this.src='img/feed.png'" onclick="playPauseMedia5()"></div> -->
+      <!-- <div><img src="img/flush.png" alt="" class="flush" id="" onmouseover="this.src='img/flushH.png'" onmouseout="this.src='img/flush.png'" onclick="playPauseMedia6()"></div> -->
     </div>
     
-  <!-- Displays score & Retry icon (work in progress) Kyle -->
-    <div class="playHUD" id="playHUD">
-      <h2 id="scoreBoard"></h2>
-      <div class="retry"><img src="img/retry.png" onclick="window.location.reload()" onmouseover="this.src='img/retryH.png'" onmouseout="this.src='img/retry.png'" alt=""></div>
-    </div>  
+
   
     
   <!-- Javascript that determines the max number of clicks based on score (working) Kyle -->
