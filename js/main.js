@@ -9,7 +9,6 @@ function startButton(){
   document.getElementById("scenarioTitle").style.display = 'block';
   document.getElementById("scenarioBody").style.display = 'block';
 
-
   // audio toggle
 
 }
@@ -92,6 +91,8 @@ window.onload = function () {
   document.getElementById("sequence").style.display = 'none';
   document.getElementById("icons").style.display = 'none';
   document.getElementById("playHUD").style.display = 'none';
+  document.getElementById("scoreBoard").style.display = 'none';
+
 
   var questionArea = document.getElementsByClassName('questions')[0],
         answerArea = document.getElementsByClassName('answers')[0],
@@ -199,6 +200,7 @@ window.onload = function () {
           document.getElementById("sequence").style.display = 'grid';
           document.getElementById("icons").style.display = 'grid';
           document.getElementById("playHUD").style.display = 'grid';
+          document.getElementById("scoreBoard").style.display = 'grid';
           document.getElementById("wsMotion").style.display = 'muted';
           // vid.muted = true;                    
           vid.volume = 0.3;
