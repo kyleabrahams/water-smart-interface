@@ -6,16 +6,32 @@ body, html {
 .wrapper {
 }
 
+#quiz {
+  background-color: rgba(0, 0, 0, 0);
+  padding-bottom: 0px;
+  color: white;
+  text-align: center;
+  height: auto;
+  margin: auto;
+}
+
+#quiz > h1 {
+  text-align: center;
+  padding: 0em 0em 1em 0em;
+  font-size: 20px;
+  color: white;
+}
+
 .startButton {
   display: block;
   color: black;
   /* font-size: 1em; */
   font-weight: 700;
   width: 15em;
-  margin: 24em auto;
+  margin: 16em auto;
   padding: 1em 1em 1em 1em;
   background-color: white;
-  border-radius: 32px;
+  border-radius: 12px;
   border-width: 0.25em;
   border-color: white;
   /* text-transform: uppercase; */
@@ -36,7 +52,7 @@ body, html {
   margin: 2.5% auto; 
   padding: 1em 1em 1em 1em;
   background-color: white;
-  border-radius: 32px;
+  border-radius: 12px;
   border-width: 0.25em;
   border-color: white;
   /* text-transform: uppercase;  */
@@ -75,16 +91,69 @@ color: #3FA9F5;
 }
 
 .wsLogoS {
-  max-width: 200px;
-  height: auto;
-  margin: 10% 0 2.5% 0;
+  max-width: auto;
+  height: 25vh;
+  margin: 10vh 0 2.5% 0;
 }
 
 .wsLogoL {
-  max-width: 200px;
-  height: auto;
-  margin: 10% 0 0 0;
+  max-width: auto;
+  height: 25vh;
+  margin: 10vh 0 0 0;
   background-color: black, rgb(0, 0, 0, 0.5);
+}
+
+.playHUD {
+  font-family: helvetica;
+  /* min-width: 480px; */
+ /* font-weight: 100; */
+  grid-column-start: 2;
+  grid-row: 1;
+  height: auto;
+  margin: .auto;
+  font-size: 20px;
+  /* text-transform: uppercase; */
+  /* display: grid; */
+  grid-template-columns: repeat(auto-fit, minmax(480px, 1fr));
+  /* grid-template-rows: 1fr 1fr;  */
+  color: #3FA9F5;
+  z-index: 1;
+}
+
+.playHUD h2 {
+  display: block;
+  color: white;
+  font-size: 20px;
+  font-weight: 700;
+  text-align: center;
+  width: 12em;
+  margin: auto auto;
+  /* align-items: center; */
+  padding: 26px 24px 26px 20px;
+  background-color: #3FA9F5;
+  border-radius: 12px;
+  border-width: 0.25em;
+  border-color: white;
+  /* grid-column-start: 2; */
+  /* grid-row: 1; */
+  z-index: 1;
+  
+}
+
+.playHUD img {
+  cursor: pointer;
+}
+.sequence video {
+  max-height: 25rem;
+  border-radius: 12px;
+}  
+
+.sequence {
+  display: grid;
+  align-items: center;
+  padding: 2rem 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(480px, 1fr));
+  grid-gap: 10px 10px;
 }
 
 .wsMotion {
@@ -93,21 +162,6 @@ color: #3FA9F5;
   min-width: 100%;
   min-height: 100%;
   z-index: -1;
-}
-
-#quiz {
-  background-color: rgba(0, 0, 0, 0);
-  padding-bottom: 60px;
-  color: white;
-  text-align: center;
-  margin: ;
-}
-
-#quiz > h1 {
-  text-align: center;
-  padding: 0em 0em 1em 0em;
-  font-size: 20px;
-  color: white;
 }
 
 .questions {
@@ -138,7 +192,7 @@ color: #3FA9F5;
   margin: 1em auto;
   padding: 1em 1em 1em 1em;
   background-color: white;
-  border-radius: 32px;
+  border-radius: 12px;
   border-width: 0.25em;
   border-color: white;
 }
@@ -175,69 +229,13 @@ color: #3FA9F5;
   
 }
 
-.playHUD {
-  font-family: helvetica;
-  min-width: 480px;
- /* font-weight: 100; */
-  grid-column-start: 2;
-  grid-row: 1;
-  margin: -4em auto;
-  font-size: 20px;
-  /* text-transform: uppercase; */
-  /* display: grid; */
-  grid-template-columns: repeat(auto-fit, minmax(480px, 1fr));
-  /* grid-template-rows: 1fr 1fr;  */
-  color: #3FA9F5;
-  z-index: 1;
-}
-
-.playHUD h2 {
-  display: block;
-  color: white;
-  font-size: 20px;
-  font-weight: 700;
-  text-align: center;
-  width: 12em;
-  margin: 2em auto;
-  /* align-items: center; */
-  padding: 26px 24px 26px 20px;
-  background-color: #3FA9F5;
-  border-radius: 32px;
-  border-width: 0.25em;
-  border-color: white;
-  /* grid-column-start: 2; */
-  /* grid-row: 1; */
-  z-index: 1;
-  
-}
-
-.playHUD img {
-  cursor: pointer;
-}
-
 .retry {
-  margin: 2em auto 2em auto;
-
+  margin: auto;
   width: 80px;
-  /* top: 36vh; */
-  /* display: grid; */
-  /* grid-template-columns: 1fr 1fr 1fr; */
   position: absolute;
   z-index: 2;
 
 }
-
-.retry img{
-  margin: 2em auto;
-  max-width: auto;
-  height: 64px;
-  display: inline;
-  position: absolute;
-  z-index: 1;
-  cursor: pointer;
-  left: 62vw
-}
-
 
 .icons {
   position: absolute;
@@ -266,21 +264,7 @@ color: #3FA9F5;
 
 }
 
-.sequence video {
-  max-height: 480px;
-  border-radius: .5rem;
-}  
 
-.sequence {
-  display: grid;
-  align-items: center;
-  margin: auto auto;
-  padding: 4rem 2rem;
-  max-width: 1920px;
-  width: 100%; 
-  grid-template-columns: repeat(auto-fit, minmax(480px, 1fr));
-  grid-gap: 20px 20px;
-}
 
 /* @media only screen and (max-width: 320px) {
 .sequence {
