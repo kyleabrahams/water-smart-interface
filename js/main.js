@@ -101,7 +101,7 @@ window.onload = function () {
        // An object that holds all the questions + possible answers.
        // In the array --> last digit gives the right answer position
         allQuestions = {
-          'What is the recommended amount of water you should drink per day?' : ['16 cups', '8 cups', '10 cups', '5 cups', 1],
+          'What is the recommended amount of water should you drink per day?' : ['16 cups', '8 cups', '10 cups', '5 cups', 1],
           
           'How much water does the average Canadian use per day?' : ['329L', '500L' , '238L', '1239L', 0],
                   
@@ -198,7 +198,7 @@ window.onload = function () {
           // wrapperArea.innerHTML = '';
           document.getElementById("sequence").style.display = 'grid';
           document.getElementById("icons").style.display = 'grid';
-          document.getElementById("playHUD").style.display = '';
+          document.getElementById("playHUD").style.display = 'grid';
           document.getElementById("wsMotion").style.display = 'muted';
           // vid.muted = true;                    
           vid.volume = 0.3;
