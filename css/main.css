@@ -3,16 +3,11 @@ body, html {
   scroll-behavior: smooth;
 }
 
-.wrapper {
-}
-
 #quiz {
+  /* min-height: 100vh; */
   background-color: rgba(0, 0, 0, 0);
-  padding-bottom: 0px;
   color: white;
   text-align: center;
-  height: auto;
-  margin: auto;
 }
 
 #quiz > h1 {
@@ -28,7 +23,7 @@ body, html {
   /* font-size: 1em; */
   font-weight: 700;
   width: 15em;
-  margin: 16em auto;
+  margin: 15em auto;
   padding: 1em 1em 1em 1em;
   background-color: white;
   border-radius: 12px;
@@ -46,7 +41,7 @@ body, html {
 .nextButton {
   color: black;
   display: none;
-  font-size: 1em;
+  font-size: 1rem;
   font-weight: 700;
   width: 15em;
   margin: 2.5% auto; 
@@ -64,12 +59,16 @@ body, html {
   transition:.10s ease-in;
 }
 
+.scenarioScreen {
+  /* max-height: 50vh; */
+}
+
 .scenarioTitle {
 display: none;
-font-size: 26px;
+font-size: 1.5rem;
 font-weight: 700;
-border-top: 0.05em solid white;
-border-bottom: 0.05em solid white;
+/* border-top: 0.05em solid white;
+border-bottom: 0.05em solid white; */
 background-color: rgb(0, 0, 0, 0.5);
 padding: 0.75em;
 color: #3FA9F5;
@@ -77,29 +76,24 @@ color: #3FA9F5;
 }
 
 .scenarioBody{
-  min-width: 180px;
-  text-transform: none;
   text-align: left;
+  line-height: 150%;
   display: none;
-  left: 50vw;
-  max-width: 100%;
-  padding: 4em 4em;
-  font-size: 20px;
-  font-weight: 500;
+  padding: 2em;
+  font-size: 1rem;
+  /* font-weight: 400; */
   background-color: rgb(0, 0, 0, 0.5);
 
 }
 
 .wsLogoS {
-  max-width: auto;
-  height: 25vh;
-  margin: 10vh 0 2.5% 0;
+  height: 10rem;
+  margin: 4rem auto;
 }
 
 .wsLogoL {
-  max-width: auto;
-  height: 25vh;
-  margin: 10vh 0 0 0;
+  height: 10rem;
+  margin: 4rem auto;
   background-color: black, rgb(0, 0, 0, 0.5);
 }
 
@@ -174,10 +168,12 @@ color: #3FA9F5;
   min-height: 180px;
   font-size: 1.5em;
   font-weight: 700;
+  text-align: left;
+  margin: auto;
   /* border-top: 0.05em solid white;
   border-bottom: 0.05em solid white; */
   background-color: rgb(0, 0, 0, 0.5);
-  padding: 2em;
+  padding: 1em;
   color: #3FA9F5;
 }
 
@@ -204,12 +200,14 @@ color: #3FA9F5;
 }
 
 .checker {
-  display: inline-block;
-  width: 20%;
-  margin: 0 auto;
+  text-align: center;
+  width: auto;
+  margin: auto;
+  padding: 1rem;
 }
 
 .correct, .false {
+  align-items: center;
   font-weight: 700;
   background-color: #3FA9F5;
   width: 2em;
@@ -217,8 +215,9 @@ color: #3FA9F5;
   line-height: 2em;
   padding-left: 0em;
   float: left;
-  margin-left: 0.5em;
-  margin-top: 0.00em;
+  margin: auto 1.1rem;
+  /* margin-left: 0.5em;
+  margin-top: 0.00em; */
   border-radius: 2em;
 }
 
@@ -236,13 +235,12 @@ color: #3FA9F5;
 }
 
 .icons {
+  display: inline-block;
   position: absolute;
-  /* bottom: 0; */
   padding: 1rem;
   margin-top: .75rem;
   z-index: 2;
   max-width: 80px;
-
 }
 
 .firstVideo img{
