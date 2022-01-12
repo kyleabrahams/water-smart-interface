@@ -3,8 +3,7 @@
 
 function startButton(){ 
   document.getElementById("startButton").style.display = 'none';
-  document.getElementById("wsLogoS").style.display = 'inline-grid';
-  document.getElementById("wsLogoL").style.display = 'none';
+  document.getElementById("wsLogo").style.display = 'block';
   document.getElementById("nextButton").style.display = 'block';
   document.getElementById("scenarioTitle").style.display = 'block';
   document.getElementById("scenarioBody").style.display = 'block';
@@ -16,7 +15,6 @@ function startButton(){
 }
 
 function nextButton(){
-  document.getElementById("wsLogoS").style.display = 'inline-block';
   document.getElementById("questions").style.display = 'block';
   document.getElementById("answers").style.display = 'block';
   document.getElementById("checkAnswers").style.display = 'block';
@@ -96,7 +94,6 @@ window.onload = function () {
   document.getElementById("icons").style.display = 'none';
   document.getElementById("scoreBoard").style.display = '';
   document.getElementById("nextButton").style.display = 'none';
-  document.getElementById("startScreen").style.display = 'grid';
 
 
 
@@ -115,7 +112,7 @@ window.onload = function () {
                   
           'Which fruit or vegetable requires the most water to produce?' : ['Blueberries', 'Olives', 'Mangos', 'Corn', 1],
           
-          'How many days can a human survive without water?' : ['14 days', '6 days', '3 days', '1 day', 2],
+          'How many days can a person survive without water?' : ['14 days', '6 days', '3 days', '1 day', 2],
           
           'How many cups of water do you need to make a box of Kraft Dinner?' : ['6 cups', '3 cups' , '1.5 cups', '8 cups', 0],
                   
@@ -197,7 +194,7 @@ window.onload = function () {
           loadAnswers(current);
         } else {
           // questionArea.innerHTML = 'Done';
-          document.getElementById("wsLogoS").style.display = 'none';
+          document.getElementById("wsLogo").style.display = 'none';
           document.getElementById("questions").style.display = 'none';
 
           answerArea.innerHTML = '';

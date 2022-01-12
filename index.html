@@ -15,54 +15,51 @@
     
     <div class="navbar" id="navbar">
       <div><img class="retry" src="img/retry.png" onclick="window.location.reload()" onmouseover="this.src='img/retryH.png'" onmouseout="this.src='img/retry.png'" alt=""></div>
+      <div class="checker" id="checker"></div>
       <div class="playHUD" id="playHUD"></div> 
       <div><h2 id="scoreBoard"></h2></div>
     </div>  
 
+    <div class="logo">
+      <div><img src="img/wsLogo.png" alt="" class="wsLogo" id="wsLogo"></div>
+      <!-- <video autoplay="autoplay" loop="loop" muted class="wsMotion" id=wsMotion><source src="vid/wsMotionS.mp4" type="video/mp4"></video> -->
+      <audio id="water" autoplay loop>
+        <source src="vid/water.mp3">
+      </audio>       
     </div>
 
-  <!-- Quiz section (working) Jack -->
-    <div class="wrapper">
-        <video autoplay="autoplay" loop="loop" muted class="wsMotion" id=wsMotion><source src="vid/wsMotionS.mp4" type="video/mp4"></video>
-        <audio id="water" autoplay loop>
-          <source src="vid/water.mp3">
-        </audio>       
-        
+    <div class="startScreen" id="startScreen">
+      <p class="h2">Welcome!</p>
+      <p class="textBody" id="startBody">
+        Would you like to play a game?
+        11:07pm
+      </p>
+      <div class="startButton" id="startButton" onclick="startButton()">Start</div>
+    </div>
+
+    <div class="scenarioScreen">
+      <p class="scenarioTitle" id="scenarioTitle">Scenario</p>
+      <p class="scenarioBody" id="scenarioBody">
+        Due to a damaged water supply line, your off-grid house has a limited amount of water in its reserves.
+        For each question you answer correctly, you will win a water credit. 
+        For each water credit you win, you must decide which system to distribute your water credit to deciding your fate. 
+        Good luck!!!
+      </p>
+      <div class="nextButton" id="nextButton" onclick="nextButton()">Next</div>
+    </div>
+
+<!-- Quiz section (working) Jack -->
   
-        <div id="quiz">
-          <div><img src="img/wsLogo.png" alt="" class="wsLogoS" id="wsLogoS"></div>
-          <div><img src="img/wsLogo.png" alt="" class="wsLogoL" id="wsLogoL"></div> 
-
-          <div class="startScreen" id="startScreen">
-            <p class="startBody" id="startBody">
-              <!-- Are you ready to play a game? -->
-              11:07pm
-            </p>
-          </div>
-
-          <div class="startButton" id="startButton" onclick="startButton()">Start</div>
-
-          <div class="scenarioScreen">
-            <p class="scenarioTitle" id="scenarioTitle">Scenario</p>
-            <p class="scenarioBody" id="scenarioBody">
-              Due to a damaged water supply line, your off-grid house has a limited amount of water in its reserves.
-              For each question you answer correctly, you will win a water credit. 
-              For each water credit you win, you must decide which system to distribute your water credit to deciding your fate. 
-              Good luck!!!
-            </p>
-          <div class="nextButton" id="nextButton" onclick="nextButton()">Next</div>
-          </div>
-          <div><p class="questions" id="questions"></p></div>
-          <div class="checker" id="checker"></div>
-          <div class="answers" id="answers"></div>         
-          <div class="checkAnswers" id="checkAnswers"></div>
-          <!-- <div class="checker" id="checker"></div> -->
-        </div>
+    <div id="quiz">
+      <div><p class="questions" id="questions"></p></div>
+      <!-- <div class="checker" id="checker"></div> -->
+      <div class="answers" id="answers"></div>         
+      <div class="checkAnswers" id="checkAnswers"></div>
+      <!-- <div class="checker" id="checker"></div> -->
     </div>
       
    <!-- Displays score & Retry icon (work in progress) Kyle -->
     <!-- <div class="playHUD" id="playHUD">
-
     </div>   -->
       
     <!-- <div class="playHUD" id="playHUD">
