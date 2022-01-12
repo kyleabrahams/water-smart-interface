@@ -49,7 +49,8 @@ body, html {
 
 .retry {
   position: absolute;
-  right: 0;
+  right: 10px;
+  bottom: 10px;
   width: 60px;
   /* margin: 1rem; */
   z-index: 2;
@@ -121,15 +122,15 @@ body, html {
 }
 
 .logo {
-  height: 13rem;
-  margin: 3rem auto;
+  text-align: center;
+  /* margin: 3rem auto; */
 }
 
 .wsLogo {
-  display: block;
+  text-align: center;
   height: 12rem;
-  padding: auto;
-  margin: auto;
+  /* padding: 1rem; */
+  margin: 4rem;
   background-color: black, rgb(0, 0, 0, 0.5);
   /* border-top: 0.05em solid white;
   border-bottom: 0.05em solid white; */
