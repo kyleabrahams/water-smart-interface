@@ -38,7 +38,7 @@ body, html {
   vertical-align:top;  
   position: fixed;
   bottom: 0;
-  /* height: 5rem; */
+  height: 5rem;
   width: 100%;
   padding: 1rem;
   background-color: rgba(125, 125, 125, 0.8);
@@ -48,8 +48,10 @@ body, html {
 }
 
 .retry {
-  position: relative;
+  position: absolute;
+  right: 0;
   width: 60px;
+  /* margin: 1rem; */
   z-index: 2;
 }
 
@@ -228,6 +230,7 @@ color: #3FA9F5;
 }
 
 .checker {
+  position: absolute;
   text-align: center;
   height: 3rem;
   width: auto;
@@ -281,6 +284,7 @@ color: #3FA9F5;
 .correct {
   align-items: center;
   font-weight: 700;
+  color: white;
   background-color: #3FA9F5;
   width: 2em;
   height: 2em;
@@ -292,9 +296,11 @@ color: #3FA9F5;
   margin-top: 0.00em; */
   border-radius: 2em;
 
+
 }
 
 .false {
+  position: relative;
   align-items: center;
   font-weight: 700;
   color: rgb(165, 165, 165);
@@ -308,6 +314,7 @@ color: #3FA9F5;
   /* margin-left: 0.5em;
   margin-top: 0.00em; */
   border-radius: 2em;
+
 }
 
 .icons img {

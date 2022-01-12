@@ -15,6 +15,7 @@ function startButton(){
 }
 
 function nextButton(){
+  document.getElementById("navbar").style.display = 'grid';
   document.getElementById("questions").style.display = 'block';
   document.getElementById("answers").style.display = 'block';
   document.getElementById("checkAnswers").style.display = 'block';
@@ -88,7 +89,6 @@ function nextSound(){
 window.onload = function () {
   
 
-  // document.getElementById("navbar").style.display = 'grid';
   // document.getElementById("playHUD").style.display = 'grid';
   document.getElementById("sequence").style.display = 'none';
   document.getElementById("icons").style.display = 'none';
