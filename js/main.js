@@ -3,7 +3,7 @@
 
 function startButton(){ 
   document.getElementById("startButton").style.display = 'none';
-  document.getElementById("wsLogo").style.display = 'block';
+  // document.getElementById("wsLogo").style.display = 'block';
   document.getElementById("nextButton").style.display = 'block';
   document.getElementById("scenarioTitle").style.display = 'block';
   document.getElementById("scenarioBody").style.display = 'block';
