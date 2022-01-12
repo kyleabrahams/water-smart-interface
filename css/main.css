@@ -90,6 +90,7 @@ body, html {
   position: relative;
   padding: 1rem;
   max-width: 50%;
+  color: white;
 }
 
 
@@ -128,7 +129,7 @@ body, html {
 
 .wsLogo {
   text-align: center;
-  height: 12rem;
+  height: 10rem;
   /* padding: 1rem; */
   margin: 4rem;
   background-color: black, rgb(0, 0, 0, 0.5);
@@ -274,6 +275,7 @@ color: #3FA9F5;
 .sequence img{
   position: absolute;
   left: 0;
+  /* bottom: 0; */
   margin: 1rem;
   /* bottom: 0; */
   z-index: 1;
