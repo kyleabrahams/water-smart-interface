@@ -92,6 +92,8 @@ window.onload = function () {
   document.getElementById("icons").style.display = 'none';
   document.getElementById("playHUD").style.display = 'none';
   document.getElementById("scoreBoard").style.display = 'none';
+  document.getElementById("nextButton").style.display = 'none';
+
 
 
   var questionArea = document.getElementsByClassName('questions')[0],
