@@ -8,6 +8,8 @@ function startButton(){
   document.getElementById("nextButton").style.display = 'block';
   document.getElementById("scenarioTitle").style.display = 'block';
   document.getElementById("scenarioBody").style.display = 'block';
+  document.getElementById("startScreen").style.display = 'none';
+
 
   // audio toggle
 
@@ -22,6 +24,7 @@ function nextButton(){
   document.getElementById("nextButton").style.display = 'none';
   document.getElementById("scenarioTitle").style.display = 'none';
   document.getElementById("scenarioBody").style.display = 'none';
+
   // document.getElementById("quiz").style.display = 'none';
   // document.getElementById("sequence").style.display = 'grid';
 }
@@ -93,6 +96,8 @@ window.onload = function () {
   document.getElementById("playHUD").style.display = 'none';
   document.getElementById("scoreBoard").style.display = 'none';
   document.getElementById("nextButton").style.display = 'none';
+  document.getElementById("startScreen").style.display = 'grid';
+
 
 
 
