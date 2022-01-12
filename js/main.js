@@ -91,10 +91,10 @@ window.onload = function () {
   
 
   document.getElementById("navbar").style.display = 'grid';
+  // document.getElementById("playHUD").style.display = 'grid';
   document.getElementById("sequence").style.display = 'none';
   document.getElementById("icons").style.display = 'none';
-  document.getElementById("playHUD").style.display = 'none';
-  document.getElementById("scoreBoard").style.display = 'none';
+  document.getElementById("scoreBoard").style.display = '';
   document.getElementById("nextButton").style.display = 'none';
   document.getElementById("startScreen").style.display = 'grid';
 
