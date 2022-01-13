@@ -23,6 +23,8 @@ function nextButton(){
   document.getElementById("nextButton").style.display = 'none';
   document.getElementById("scenarioTitle").style.display = 'none';
   document.getElementById("scenarioBody").style.display = 'none';
+  document.getElementById("quiz").style.display = 'block';
+
 
   // document.getElementById("quiz").style.display = 'none';
   // document.getElementById("sequence").style.display = 'grid';
@@ -94,6 +96,8 @@ window.onload = function () {
   document.getElementById("icons").style.display = 'none';
   document.getElementById("scoreBoard").style.display = '';
   document.getElementById("nextButton").style.display = 'none';
+  document.getElementById("quiz").style.display = 'none';
+
 
 
 
