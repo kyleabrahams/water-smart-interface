@@ -16,7 +16,7 @@ function startButton(){
 
 
 function nextButton(){
-  document.getElementById("navbar").style.display = 'grid';
+  document.getElementById("navbar").style.display = '';
   document.getElementById("questions").style.display = 'block';
   document.getElementById("answers").style.display = 'block';
   document.getElementById("checkAnswers").style.display = 'block';
@@ -93,6 +93,7 @@ window.onload = function () {
   
 
   // document.getElementById("playHUD").style.display = 'grid';
+  document.getElementById("navbar").style.display = 'none';
   document.getElementById("sequence").style.display = 'none';
   document.getElementById("icons").style.display = 'none';
   document.getElementById("scoreBoard").style.display = '';

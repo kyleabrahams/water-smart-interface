@@ -23,8 +23,6 @@ body, html {
 .h5 { font-size: .83em; }
 .h6 { font-size: .75em; }
 
-
-
 .wsMotion {
   position: fixed;
   bottom: 0;
@@ -34,15 +32,14 @@ body, html {
 }
 
 .navbar {
-  display: none;
-  vertical-align:top;  
+  margin: auto;
   position: fixed;
   bottom: 0;
   height: 5rem;
-  width: 100%;
+  width: 500px;
   padding: 1rem;
   background-color: rgba(125, 125, 125, 0.8);
-  box-shadow: outset 0 0 2000px rgba(255, 255, 255, .5);
+  /* box-shadow: outset 0 0 2000px rgba(255, 255, 255, .5); */
   /* filter: blur(5px); */
   z-index: 2;
 }
@@ -87,7 +84,6 @@ body, html {
 }
 
 .scoreBoard {
-  position: relative;
   padding: 1rem;
   max-width: 50%;
   color: white;
@@ -228,7 +224,6 @@ color: #3FA9F5;
 }
 
 .checker {
-  position: absolute;
   text-align: center;
   height: 3rem;
   width: auto;
