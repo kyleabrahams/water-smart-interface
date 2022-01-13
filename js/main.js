@@ -14,6 +14,7 @@ function startButton(){
 
 }
 
+
 function nextButton(){
   document.getElementById("navbar").style.display = 'grid';
   document.getElementById("questions").style.display = 'block';
