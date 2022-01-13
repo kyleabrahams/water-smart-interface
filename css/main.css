@@ -250,20 +250,18 @@ color: #3FA9F5;
 }
 
 .sequence video {
-  margin: auto;
-
-  max-width: 100%;
+  max-width: 500px;
   border-radius: 12px;
 }   
 
 .sequence {
-  margin: auto;
+  /* width: 95%; */
+  /* left: 0; */
+  /* right: 0; */
+  /* margin: 0 auto; */
+  /* left: 50%; */
+  /* transform: translateX(-50%); */
 
-  /* display: grid; */
-  align-items: center;
-  padding: auto 1rem;
-  /* grid-template-columns: repeat(auto-fit, minmax(480px, 1fr)); */
-  /* grid-gap: 4rem; */
 }
 
 .sequence img{

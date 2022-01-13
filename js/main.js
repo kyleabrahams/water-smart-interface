@@ -112,17 +112,17 @@ window.onload = function () {
        // An object that holds all the questions + possible answers.
        // In the array --> last digit gives the right answer position
         allQuestions = {
-          'What is the recommended amount of water should you drink per day?' : ['16 cups', '8 cups', '10 cups', '5 cups', 1],
+          '1. What is the recommended amount of water should you drink per day?' : ['16 cups', '8 cups', '10 cups', '5 cups', 1],
           
-          'How much water does the average Canadian use per day?' : ['329L', '500L' , '238L', '1239L', 0],
+          '2. How much water does the average Canadian use per day?' : ['329L', '500L' , '238L', '1239L', 0],
                   
-          'Which fruit or vegetable requires the most water to produce?' : ['Blueberries', 'Olives', 'Mangos', 'Corn', 1],
+          '3. Which fruit or vegetable requires the most water to produce?' : ['Blueberries', 'Olives', 'Mangos', 'Corn', 1],
           
-          'How many days can a person survive without water?' : ['14 days', '6 days', '3 days', '1 day', 2],
+          '4. How many days can a person survive without water?' : ['14 days', '6 days', '3 days', '1 day', 2],
           
-          'How many cups of water do you need to make a box of Kraft Dinner?' : ['6 cups', '3 cups' , '1.5 cups', '8 cups', 0],
+          '5. How many cups of water do you need to make a box of Kraft Dinner?' : ['6 cups', '3 cups' , '1.5 cups', '8 cups', 0],
                   
-          'What is the chemical composition of water?' : ['H2O', 'CO2', 'O2', 'H2O2', 0],
+          '6. What is the chemical composition of water?' : ['H2O', 'CO2', 'O2', 'H2O2', 0],
         };
          
     function loadQuestion(curr) {
@@ -207,7 +207,7 @@ window.onload = function () {
           checker.innerHTML = '';
     // below triggers screen to disappear instead of say 'Done'     
           // wrapperArea.innerHTML = '';
-          document.getElementById("sequence").style.display = 'grid';
+          document.getElementById("sequence").style.display = '';
           document.getElementById("icons").style.display = 'grid';
           document.getElementById("playHUD").style.display = 'grid';
           document.getElementById("scoreBoard").style.display = 'grid';
